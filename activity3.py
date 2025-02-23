@@ -1,12 +1,11 @@
-num = int(input("Enter number to check:"))
-
-if num>50:
-    print("Number is greater than 50")
-    if num%2==0:
-       print("And it is even.")
+num = int(input("Enter a number:"))
+if num > 1:
+    for i in range(2, int(2**0.5 + 1)):
+        if num % i== 0:
+            print(f"{num} is not a prime number.")
+            break
 
     else:
-         print("And it is odd.")
-
+        print(f"{num} is a prime number.")   
 else:
-     print("Number is less than 50.")
+     print(f"{num} is not a prime number.")         
