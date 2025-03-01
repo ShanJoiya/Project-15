@@ -1,2 +1,7 @@
-for i in range(1, 11) :
-    print(f"23 x {i} = {23 * i}")
+def intro(name):
+
+
+   print("Hello, Good Morning! I am", name)
+
+user_name = input("Enter your name")
+intro(user_name)
