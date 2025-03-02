@@ -1,7 +1,19 @@
-def intro(name):
+import turtle
 
 
-   print("Hello, Good Morning! I am", name)
+turtle.Screen().bgcolor("Orange")
 
-user_name = input("Enter your name")
-intro(user_name)
+sc = turtle.Screen()
+sc.setup(400,300)
+
+
+turtle.title("Welcome to Turtlr Window")
+
+
+board = turtle.Turtle()
+
+for i in range(4):
+    board.forward(100)
+    board.left(90)
+    i=i+1
+turtle.done()
